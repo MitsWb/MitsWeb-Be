@@ -15,7 +15,6 @@ const auth = (req, res, next) => {
 };
 const adminAuth = async (req, res, next) => {
   const token = req.header("mitsweb-access-token");
-
   if (!token) return res.status(400).json({ msg: "Access denied " });
   try {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
@@ -51,5 +50,5 @@ const facultyAuth = async (req, res, next) => {
 module.exports = {
   auth,
   adminAuth,
-  facultyAuth,
+  facultyAuth
 };

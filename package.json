@@ -1,11 +1,11 @@
 {
-  "name": "mitsweb_be_nodejs",
+  "name": "mitsweb",
   "version": "1.0.0",
-  "description": "The backend for mits web",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
@@ -45,5 +45,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"
-  }
+  },
+  "keywords": []
 }

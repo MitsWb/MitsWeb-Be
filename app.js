@@ -3,7 +3,6 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const app = express();
-const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3000;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
@@ -16,7 +15,7 @@ const swaggerDocument = require("./swagger.json");
 mongoose.connect(process.env.MONGOURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
+  useFindAndModify: false
 });
 
 //on successful connection
