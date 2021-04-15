@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { ObjectId } = require("mongoose").Schema.Types;
 
 const timetableSchema = new mongoose.Schema({
   department: {
@@ -14,11 +15,8 @@ const timetableSchema = new mongoose.Schema({
       day: String,
       periods: [
         {
-          periodTime: {
-            start: String,
-            end: String,
-          },
-          subject: String,
+          type: ObjectId,
+          ref: "Period",
         },
       ],
     },
