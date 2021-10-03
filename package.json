@@ -39,7 +39,7 @@
     "nodemon": "^2.0.13",
     "path": "^0.12.7",
     "razorpay": "^2.0.7",
-    "set-value": "^3.0.2",
+    "set-value": "^4.0.1",
     "shortid": "^2.2.16",
     "swagger-ui-express": "^4.1.6",
     "update": "^0.7.4",
