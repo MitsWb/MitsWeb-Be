@@ -5,7 +5,7 @@ const auth = (req, res, next) => {
   const token = req.header("mitsweb-access-token");
 
   if (!token)
-    return res.status(400).json({ success: false, msg: "Access denied " });
+    return res.status(400).json({ success: false, msg: "Access denied" });
   try {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     req.user = verified;
@@ -18,7 +18,7 @@ const adminAuth = async (req, res, next) => {
   const token = req.header("mitsweb-access-token");
 
   if (!token)
-    return res.status(400).json({ success: false, msg: "Access denied " });
+    return res.status(400).json({ success: false, msg: "Access denied" });
   try {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     req.user = verified;
@@ -37,7 +37,7 @@ const facultyAuth = async (req, res, next) => {
   const token = req.header("mitsweb-access-token");
 
   if (!token)
-    return res.status(400).json({ success: false, msg: "Access denied " });
+    return res.status(400).json({ success: false, msg: "Access denied" });
   try {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     req.user = verified;
@@ -55,7 +55,7 @@ const securityAuth = async (req, res, next) => {
   const token = req.header("mitsweb-access-token");
 
   if (!token)
-    return res.status(400).json({ success: false, msg: "Access denied " });
+    return res.status(400).json({ success: false, msg: "Access denied" });
   try {
     const verified = jwt.verify(token, process.env.JWT_SECRET);
     req.user = verified;

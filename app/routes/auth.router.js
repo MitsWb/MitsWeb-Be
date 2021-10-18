@@ -16,7 +16,6 @@ const {
   validateLogin,
   validateGooglelogin,
 } = require("./validation/auth.validation");
-// const requireLogin = require('../middlewares/requireLogin');
 
 router.get("/", (req, res) => {
   res.json({ msg: "Welcome to MITS Web User Authentication!!", success: true });
