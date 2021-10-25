@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:5.0.2
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=123456
+    ports:
+      - "27017:27017"
+    volumes:
+      - db:/data/db
+  app:
+    depends_on:
+      - mongodb
+    build: ./
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - "2310:2310"
+    environment:
+      - JWT_SECRET=$JWT_SECRET
+      - RAZORPAY_SECRET=$RAZORPAY_SECRET
+      - ADMINPASSWORD=$ADMINPASSWORD
+      - RAZPORPAY_KEY_ID=$RAZPORPAY_KEY_ID
+      - RAZORPAY_KEY_SECRET=$RAZORPAY_KEY_SECRET
+      - PROJECT_ID=$PROJECT_ID
+      - BUCKET_NAME=$BUCKET_NAME
+    stdin_open: true
+    tty: true
+volumes:
+  db:
