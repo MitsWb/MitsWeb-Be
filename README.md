@@ -18,6 +18,12 @@ The back end code for MITSWEB .
 - Run `npm start`
 - Navigate to `http://localhost:4000/`
 
+or using Docker
+
+- To start node server and mongodb:`docker-compose up -d`
+- Navigate to `http://localhost:2310/`
+- To stop docker: `docker-compose down`
+
 ## Credits 😀
 
 - [Arihant Hirawat](https://github.com/arihant-2310)
