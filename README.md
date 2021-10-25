@@ -14,7 +14,7 @@ The back end code for MITSWEB .
 
 - Clone the repo `https://github.com/MitsWb/MitsWeb-Be.git`
 - Run command to install all the dependencies `npm install`
-- Create `.env` file in root folder and add required parameters
+- Create `.env` file in root folder and add required parameters (refer .env.example)
 - Run `npm start`
 - Navigate to `http://localhost:4000/`
 
