@@ -2,13 +2,10 @@
 
 # MitsWeb
 
-The back end code for MITSWEB . 
+The back end code for MITSWEB .
 
-![Heroku](http://heroku-badge.herokuapp.com/?app=mitsweb-be&style=flat&svg=1)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/MitsWb/MitsWeb-Be?style=flat)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/MitsWb/MitsWeb-Be?color=green?style=flat)
-
-
 
 ## 💻 Run the project locally
 
