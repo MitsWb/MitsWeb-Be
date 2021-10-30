@@ -1,5 +1,5 @@
 const generateStudentId = (rollNo, department, passoutYear) => {
-  let finalrollNo = "None",
+  let finalrollNo = "",
     zeros = "";
   for (var i = 0; i < 3 - String(Number(rollNo)).length; i++) {
     zeros += "0";
